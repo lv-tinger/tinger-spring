@@ -1,5 +1,6 @@
 plugins {
     id 'java'
+    id 'java-library'
     id 'maven-publish'
 }
 
@@ -18,14 +19,14 @@ repositories {
 }
 
 dependencies {
-    implementation "org.tinger:tinger-core:${version}"
-    implementation "org.tinger:tinger-common:${version}"
+    api "org.tinger:tinger-core:${version}"
+    api "org.tinger:tinger-common:${version}"
 
-    implementation "org.springframework:spring-core:${spring_version}"
-    implementation "org.springframework:spring-beans:${spring_version}"
-    implementation "org.springframework:spring-context:${spring_version}"
-    implementation "org.springframework:spring-context-support:${spring_version}"
-    implementation "org.springframework:spring-aop:${spring_version}"
+    api "org.springframework:spring-core:${spring_version}"
+    api "org.springframework:spring-beans:${spring_version}"
+    api "org.springframework:spring-context:${spring_version}"
+    api "org.springframework:spring-context-support:${spring_version}"
+    api "org.springframework:spring-aop:${spring_version}"
 
     implementation "org.projectlombok:lombok:${lombok_version}"
     annotationProcessor "org.projectlombok:lombok:${lombok_version}"
